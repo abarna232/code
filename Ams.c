@@ -1,0 +1,34 @@
+#include<stdio.h>
+void main()
+{
+int a,b,c,d,e=0,l=0,p=1,r;
+scanf("%d",&a);
+b=a;
+c=a;
+while(a)
+{
+a=a/10;
+l++;
+}
+while(b)
+{
+r=b%10;
+p=1;
+d=l;
+while(d)
+{
+p=p*r;
+d--;
+}
+e=e+p;
+b=b/10;
+}
+if(c==e)
+{
+printf("yes");
+}
+else 
+{
+printf("no");
+}
+}
